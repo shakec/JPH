@@ -1,0 +1,118 @@
+<!Doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ChangedMy.Name</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul class="topnav" id="dropdownClick">
+      <li><a class="active" href="#home">Changed My Name</a></li>
+      <li class="topnav-right"><a href="#about">About</a></li>
+      <li class="topnav-right"><a href="#resume">Resume</a></li>
+      <li class="topnav-right"><a href="#articles">Articles</a></li>
+      <!-- HAMBURGER MENU: Trigram for Heaven (unicode-table.com) -->
+      <li class="dropdownIcon"><a href="javascript:void(0)" onclick="dropdownMenu()">&#9776;</a></li>
+    </ul>
+  </nav>
+  <!-- Navigation End -->
+
+  <div class="about" id="aboutMe-section-color">
+    <!-- Header Image -->
+    <!-- Header Image End-->
+
+    <!-- Social Media -->
+    <ul class="social">
+      <!-- Github -->
+      <li><a href="http://github.com/xiongchiamiov">
+        <img class="icon" src="svg/icon_Github.svg" alt="Github"></a></li>
+      <!-- Coderwall -->
+      <li><a href="http://coderwall.com/xiongchiamiov">
+        <img class="icon" src="svg/icon_Coderwall.svg" alt="Coderwall"></a></li>
+      <!-- Reddit -->
+      <li><a href="http://www.reddit.com/user/xiongchiamiov/">
+        <img class="icon" src="svg/icon_Reddit.svg" alt="Reddit"></a></li>
+    </ul>
+    <!-- Social Media End -->
+  </div>
+
+  <div class="personality" id="personality-section-color">
+    tl;dr
+
+    I self-identify as a Baptist, Libertarian, Distributist, Utilitarian, open-sourcer programmer and sysadmin.
+    <br>
+
+    <br>
+    <h3>PERSONALITY</h3>
+    <br>
+    On the DISC view of the universe, I have a natural ranking of 100 S and C, 23D and 7 I, which puts me as a pure Coordinator. While not a natural leader in any way, I’m rebellious enough to tell the project lead (plainly) when I think they’ve made a poor choice, but passive enough to follow their final decisions.
+
+    While many people may find me a bit odd (I have a tendency to keep to myself, and have been known to go through a course without ever speaking a word), it is rare to find someone who dislikes me.
+  </div>
+
+  <div class="resume" id="resume-section-color">
+    <h3>RESUME</h3>
+    <br>
+    Available in PDF form on this very site.
+  </div>
+
+
+  <div class="experience" id="exp-section-color">
+    <h3>PROGRAMMING</h3>
+    <br>
+    I’m currently starting my 5th year as a Software Engineering student at Cal Poly, the best university around. ;) I’m employed part-time as a “code frog” (yes, that is my title) at iFixit.
+
+    PHP was my first true programming language that I spent any time with, and it was my primary until the summer after my freshman year of university, when I started working for the College of Engineering on Django-powered websites. Python has been my primary language since then, although I’m finding myself writing more and more in Ruby, because it’s so damn fun!
+
+    I am also acquainted in various degrees with HTML, CSS, Javascript (mostly with jQuery), Java, C, Lua and Scheme. I am learning Scala next, and possibly Haskell, D or Factor after that, but plans tend to get altered as time passes.
+
+    Other than the work that I did for Cal Poly, and most class assignments, all of my code is available on my GitHub account.
+  </div>
+
+
+
+<!-- JavaScript Styling (change to external later) -->
+  <script>
+  // Detecting if "navbar" is in a mobile state. If it is become responsive, els (if not) stay the same.
+    function dropdownMenu() {
+      var x = document.getElementById("dropdownClick");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+        // change topnav to topnav.responsive
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+
+
+</body>
+
+<footer>
+  <!-- Auto Update Copyright Year -->
+  <ul>
+    <li class="footerLeft">James Pearson-Hughes &copy; 2010 -<span id="year">
+      <script>document.getElementById('year').appendChild(document.createTextNode(new Date().getFullYear()))</script></span></li>
+  <!-- Links to Social Media -->
+    <li class="footerRight"><a href="http://github.com/xiongchiamiov"><img class="icon2" src="svg/icon_Github.svg" alt="Github"></a></li>
+    <li class="footerRight"><a href="http://coderwall.com/xiongchiamiov"><img class="icon2" src="svg/icon_Coderwall.svg" alt="Coderwall"></a></li>
+    <li class="footerRight"><a href="http://www.reddit.com/user/xiongchiamiov/"><img class="icon2" src="svg/icon_Reddit.svg" alt="Reddit"></a></li>
+    <li class="footerRight"><a href="http://www.facebook.com/profile.php?id=837370606"><img class="icon2" src="svg/icon_Facebook.svg" alt="Facebook"></a></li>
+    <li class="footerRight"><a href="https://www.quora.com/Xiong-Chiamiov">Quora</a></li>
+    <li class="footerRight"><a href="http://news.ycombinator.com/user?id=xiongchiamiov">Hacker News</a></li>
+    <li class="footerRight"><a href="http://stackexchange.com/users/41616/xiong-chiamiov?tab=accounts">Stack Exchange</a></li>
+    <li class="footerRight"><a href="http://www.last.fm/user/xiongchiamiov">Last.fm</a></li>
+    <li class="footerRight"><a href="http://pinboard.in/u:xiong.chiamiov">Pinboard</a></li>
+    <li class="footerRight"><a href="http://anidb.net/perl-bin/animedb.pl?show=userpage&uid=272973">AniDB</a></li>
+    <li class="footerRight"><a href="http://en.wikipedia.org/wiki/User:Xiong_Chiamiov">Wikipedia</a></li>
+  </ul>
+</footer>
+
+
+</html>
